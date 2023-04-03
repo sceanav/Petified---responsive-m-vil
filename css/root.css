@@ -2,13 +2,14 @@
 
 :root {
   /* Colores */
-  --morado: #822669;
+  --morado: #83256f;
   --morado-light: #935a8c;
   --negro: #2e2928;
   --ocre: #af7a5d;
-  --ocre-light: #cdb2a3;
+  --ocre-light: #feead4;
   --ocrer: #c59793;
   --ocrer-light: #f8efec;
+  --rosado: #e5aaa3;
 
   /* borders */
   --border: 10px;
