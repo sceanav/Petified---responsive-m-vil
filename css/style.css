@@ -14,6 +14,7 @@
 body {
   width: auto;
   background-color: var(--ocrer-light);
+  min-width: 375px;
 }
 
 /* INDEX.HTML */
@@ -44,24 +45,50 @@ li {
   text-align: justify;
 }
 
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: medium;
+  color: var(--morado);
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupoRedes {
+  display: flex;
+  justify-content: center;
+}
+
+.copyRight {
+  display: flex;
+  place-content: center;
+  padding-top: 10px;
+  font-family: "Moders", sans-serif;
+  color: var(--morado);
+}
 .icono {
   width: 100px;
-  margin: 30px;
+  height: 100px;
+  margin-bottom: 60px;
 }
 
 .icono:hover {
   width: 120px;
-  margin: 30px;
+  height: 120px;
+  margin-bottom: 40px;
 }
 
 .iconoEnlace {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+
   margin-bottom: 20px;
-  margin-left: 0;
-  margin-right: 0;
+  padding-top: 80px;
+
   background-color: white;
 }
 
@@ -71,6 +98,11 @@ li {
   height: 100px;
 }
 
+.redes {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
 /* menu */
 .main-nav {
   position: fixed;
@@ -193,7 +225,8 @@ li {
 
 h1 {
   text-align: center;
-  margin-top: 40px;
+  margin: 40px;
+
   max-width: 900px;
 
   font-size: var(--text-large);
@@ -213,14 +246,13 @@ h1 {
   border-style: none;
   width: 300px;
   height: 50px;
-
+  box-shadow: 0px 0px 50px 9px var(--morado-light);
   background-color: white;
 }
 
 .adopta:hover {
-  border-style: solid;
-  border-color: var(--rosado);
-  border-width: 2px;
+  background-color: var(--rosado);
+  color: white;
 }
 
 button a {
@@ -375,6 +407,7 @@ div.perros {
   .galeriaPrincipal {
     width: auto;
     height: 350px;
+
     background-color: antiquewhite;
     display: flex;
     place-content: center;
@@ -387,7 +420,13 @@ div.perros {
 
   /* FOTO 2 */
   .foto2 {
-    display: none;
+    display: block;
+    margin: 0;
+    margin-top: 50px;
+    width: 320px;
+    height: 220px;
+
+    transform: rotate(-0deg);
   }
 
   /* FOTO 3 */
@@ -405,12 +444,10 @@ div.perros {
     display: none;
   }
   .foto6 {
-    display: block;
+    display: none;
     margin-top: 50px;
-
     width: 340px;
     height: 230px;
-    transform: rotate(-5deg);
   }
 }
 
