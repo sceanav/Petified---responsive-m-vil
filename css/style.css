@@ -97,6 +97,7 @@ footer {
   display: flex;
   justify-content: end;
   margin-right: 20px;
+  margin-top: 20px;
 }
 
 .huella2 {
@@ -239,7 +240,7 @@ footer {
 h1 {
   text-align: center;
   margin: 40px;
-
+  margin-top: 10px;
   max-width: 900px;
 
   font-size: var(--text-large);
