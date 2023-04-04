@@ -93,6 +93,19 @@ footer {
   background-color: white;
 }
 
+.huella1 {
+  float: right;
+  padding-top: 25px;
+  padding-right: 25px;
+  margin-left: -70px;
+}
+
+.huella2 {
+  float: left;
+  padding-top: 50px;
+  margin-left: 10px;
+}
+
 /* LOGO */
 .logo {
   width: 100px;
@@ -241,16 +254,21 @@ h1 {
 
 /* BUTTON HOME ADOPTAR */
 .seccion1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--ocrer-light);
 }
 
 .adopta {
   font-size: var(--text-medium);
+  max-width: 350px;
+  min-width: 300px;
   margin-top: 50px;
   border-radius: 30px;
   border-style: none;
 
-  box-shadow: 0px 0px 50px 9px var(--morado-light);
+  box-shadow: 0px 0px 30px 3px var(--morado-light);
   background-color: white;
 }
 
@@ -267,7 +285,9 @@ button::after {
 }
 button a {
   display: block;
-  padding: 25px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: "Inter", sans-serif;
   font-weight: bolder;
   text-decoration: none;
@@ -282,8 +302,12 @@ button a:active {
 .marcoBoton {
   background-color: var(--ocrer-light);
   display: flex;
+
   place-content: center;
-  margin-bottom: 100px;
+
+  margin-bottom: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 /* GALERIA HOME */
