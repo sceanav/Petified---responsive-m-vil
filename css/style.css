@@ -94,16 +94,15 @@ footer {
 }
 
 .huella1 {
-  float: right;
-  padding-top: 25px;
-  padding-right: 25px;
-  margin-left: -70px;
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
 }
 
 .huella2 {
-  float: left;
-  padding-top: 50px;
-  margin-left: 10px;
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: -22px;
 }
 
 /* LOGO */
@@ -262,8 +261,7 @@ h1 {
 
 .adopta {
   font-size: var(--text-medium);
-  max-width: 350px;
-  min-width: 300px;
+
   margin-top: 50px;
   border-radius: 30px;
   border-style: none;
@@ -302,17 +300,15 @@ button a:active {
 .marcoBoton {
   background-color: var(--ocrer-light);
   display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
 
-  place-content: center;
-
-  margin-bottom: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
+  align-items: center;
 }
 
 /* GALERIA HOME */
 .galeriaPrincipal {
-  width: auto;
+  width: 100vw;
 
   display: flex;
   place-content: center;
@@ -475,12 +471,6 @@ div.perros {
   /* FOTO 5 */
   .foto5 {
     display: none;
-  }
-  .foto6 {
-    display: none;
-    margin-top: 50px;
-    width: 340px;
-    height: 230px;
   }
 }
 
