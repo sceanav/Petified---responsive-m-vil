@@ -65,7 +65,8 @@ footer {
 .copyRight {
   display: flex;
   place-content: center;
-  padding-top: 10px;
+  padding: 10px;
+
   font-family: "Moders", sans-serif;
   color: var(--morado);
 }
@@ -215,7 +216,7 @@ footer {
 /* H1 HOME */
 .titulo {
   display: flex;
-  place-content: center;
+  place-content: column;
   background-color: var(--ocrer-light);
   font-family: "Inter", sans-serif;
   font-weight: medium;
@@ -234,6 +235,10 @@ h1 {
   color: var(--morado);
 }
 
+.huellas {
+  width: 50px;
+}
+
 /* BUTTON HOME ADOPTAR */
 .seccion1 {
   background-color: var(--ocrer-light);
@@ -244,23 +249,34 @@ h1 {
   margin-top: 50px;
   border-radius: 30px;
   border-style: none;
-  width: 300px;
-  height: 50px;
+
   box-shadow: 0px 0px 50px 9px var(--morado-light);
   background-color: white;
 }
 
 .adopta:hover {
   background-color: var(--rosado);
-  color: white;
 }
 
+.adopta:focus {
+  background-color: var(--morado);
+}
+
+button::after {
+  background-color: var(--rosado);
+}
 button a {
+  display: block;
+  padding: 25px;
   font-family: "Inter", sans-serif;
   font-weight: bolder;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--morado);
+}
+
+button a:active {
+  color: white;
 }
 
 .marcoBoton {
@@ -316,12 +332,6 @@ button a {
   margin-left: 50px;
   width: 250px;
   transform: rotate(12deg);
-}
-
-/* FOTO 6 */
-
-.foto6 {
-  display: none;
 }
 
 /* TITULOS DE LAS PAGINAS */
@@ -423,9 +433,8 @@ div.perros {
     display: block;
     margin: 0;
     margin-top: 50px;
-    width: 320px;
-    height: 220px;
-
+    width: 340px;
+    height: 240px;
     transform: rotate(-0deg);
   }
 
