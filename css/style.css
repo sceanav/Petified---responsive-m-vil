@@ -11,7 +11,7 @@
 }
 
 body {
-  width: auto;
+  width: 100%;
   background-color: var(--ocrer-light);
   min-width: 375px;
 }
@@ -84,20 +84,20 @@ header {
 }
 
 .link-item1:hover::after {
-  width: 18%;
+  width: 50px;
 }
 .link-item2:hover::after {
-  width: 49%;
+  width: 140px;
 }
 .link-item3:hover::after {
-  width: 36%;
+  width: 107px;
 }
 .link-item4:hover::after {
-  width: 24%;
+  width: 68px;
 }
 
 .link-item5:hover::after {
-  width: 40%;
+  width: 88px;
 }
 
 .button-menu {
@@ -143,7 +143,7 @@ header {
 .huella1 {
   display: flex;
   justify-content: end;
-  margin-right: 20px;
+  margin-right: 40px;
   margin-top: 20px;
 }
 
@@ -231,15 +231,12 @@ button a:active {
 }
 
 /* GALERIA HOME */
-/*
-.galeriaPrincipal {
-  width: 100vw;
 
-  display: flex;
-  place-content: center;
+.galeriaPrincipal {
+  background-color: antiquewhite;
 }
 
-
+/*
 .foto1 {
   margin-top: -15px;
   margin-left: 40px;
@@ -521,7 +518,8 @@ footer {
     width: 0;
   }
   .galeriaPrincipal {
-    width: 100vw;
+    width: 100%;
+    margin-top: 40px;
     display: flex;
     place-content: center;
   }
@@ -559,5 +557,15 @@ footer {
     margin-left: 50px;
     width: 250px;
     transform: rotate(12deg);
+  }
+
+  .iconoEnlace {
+    /*margin-top: 60px;*/
+    height: 400px;
+    padding: 50px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
