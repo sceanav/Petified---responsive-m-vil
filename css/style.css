@@ -349,6 +349,7 @@ footer {
 
 .tarjetaSomos {
   width: 100%;
+  background-color: white;
 }
 
 .marcoTitulo {
@@ -377,6 +378,10 @@ footer {
   line-height: 0.95;
   font-size: var(--text-medium);
   font-family: "Inter", sans-serif;
+}
+
+.displaySomos {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -425,25 +430,26 @@ footer {
   }
 
   .tarjetaSomos {
-    width: 47%;
+    scale: 1;
+    width: 70%;
     border: 2px;
     border-color: var(--negro);
     border-style: solid;
-    border-radius: 25px;
+    margin-top: 50px;
     background-color: var(--rosado);
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
     padding-bottom: 25px;
     margin-bottom: 25px;
+    box-shadow: grey 10px 10px 50px;
   }
 
   .mitadSuperiorTarjeta {
+    scale: 0.8;
     background-color: white;
     /*margin-top: -25px;*/
     padding-top: 15px;
     padding-bottom: 15px;
-    border-top-right-radius: 23px;
-    border-top-left-radius: 23px;
   }
   .galeriaPrincipal {
     width: auto;
@@ -497,6 +503,41 @@ footer {
 }
 
 @media all and (max-width: 1440px) and (min-width: 1025px) {
+  .marcoSomos {
+    scale: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tarjetaSomos {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60%;
+
+    border: 2px;
+    border-color: var(--negro);
+    border-style: solid;
+    border-radius: 0;
+    background-color: var(--rosado);
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+
+    box-shadow: grey 10px 15px 20px;
+  }
+
+  .mitadSuperiorTarjeta {
+    background-color: white;
+    /*margin-top: -25px;*/
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+
   .galeriaPrincipal {
     width: auto;
     display: flex;
@@ -533,6 +574,11 @@ footer {
   .foto5 {
     display: none;
   }
+  .fotoSomos {
+    transform: rotate(0deg);
+    scale: 0.8;
+    border-radius: 25px;
+  }
 
   .iconoEnlace {
     display: flex;
@@ -542,6 +588,45 @@ footer {
 }
 
 @media all and (max-width: 9000px) and (min-width: 1440px) {
+  .marcoSomos {
+    scale: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tarjetaSomos {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60%;
+
+    border: 2px;
+    border-color: var(--negro);
+    border-style: solid;
+    border-radius: 0;
+    background-color: var(--rosado);
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+
+    box-shadow: grey 10px 15px 20px;
+  }
+
+  .mitadSuperiorTarjeta {
+    background-color: white;
+    /*margin-top: -25px;*/
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+
+  .displaySomos {
+    display: block;
+  }
+
   .button-menu {
     display: none;
   }
@@ -626,6 +711,12 @@ footer {
     margin-left: 50px;
     width: 250px;
     transform: rotate(12deg);
+  }
+
+  .fotoSomos {
+    transform: rotate(0deg);
+    scale: 0.8;
+    border-radius: 25px;
   }
 
   .iconoEnlace {
