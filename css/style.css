@@ -542,6 +542,27 @@ footer {
 }
 
 @media all and (max-width: 1440px) and (min-width: 1025px) {
+  h1 {
+    margin-top: -10px;
+  }
+
+  .somos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenidosSomos {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+  }
+
+  .fotosSomosDesktop {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+  }
+
   .marcoSomos {
     scale: 1;
     display: flex;
@@ -627,6 +648,10 @@ footer {
 }
 
 @media all and (max-width: 9000px) and (min-width: 1440px) {
+  h1 {
+    margin-top: -10px;
+  }
+
   .somos {
     display: flex;
     flex-direction: column;
@@ -635,6 +660,7 @@ footer {
   .contenidosSomos {
     display: flex;
     flex-direction: row;
+    width: 80vw;
   }
 
   .fotosSomosDesktop {
