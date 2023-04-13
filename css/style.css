@@ -10,6 +10,47 @@
   box-sizing: border-box;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  line-height: 30px;
+  background-color: cornflowerblue;
+  padding: 30px;
+}
+
+.contenedorBoton {
+  display: flex;
+  place-content: center;
+  margin-top: 15px;
+}
+
+.buttonContacto {
+  width: 100px;
+  height: 35px;
+}
+
+.radiales {
+  line-height: 80px;
+}
+
+.spanContacto {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: block;
+  border: 2px dashed red;
+}
+
+/* ---------------------------------------------------- */
+
 .fotosSomosDesktop {
   display: none;
 }
